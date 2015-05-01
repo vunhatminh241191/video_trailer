@@ -1,3 +1,6 @@
+''' Video class is the abstract data type of object video.
+It contains every information about the video'''
+
 class Video(object):
 	def __init__(self, title, poster_image_url, trailer_youtube_url):
 		self.title = title
@@ -22,6 +25,7 @@ class Video(object):
 	def show_trailer(self):
 		return self.trailer_youtube_url
 
+	# changing the initial trailer of this film trailer
 	def change_link_trailer(self, trailer_youtube_url):
 		self.trailer_youtube_url = trailer_youtube_url
 
@@ -32,5 +36,6 @@ class Video(object):
 		else:
 			return
 
+	# print information about this movie 
 	def __str__(self):
 		return 'This is a %s with url link %s' %(self.title, self.trailer_youtube_url)
