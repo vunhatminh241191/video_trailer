@@ -29,6 +29,7 @@ class Video(object):
 	def change_link_trailer(self, trailer_youtube_url):
 		self.trailer_youtube_url = trailer_youtube_url
 
+	# compare 2 video if this already exists
 	def __eq__(self, video):
 		if (self.title == video.title) and (self.poster_image_url
 			== video.poster_image_url) and (self.trailer_youtube_url == video.trailer_youtube_url):
